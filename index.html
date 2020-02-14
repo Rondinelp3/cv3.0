@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daniel Rondinel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"  type="text/css" href="css/fullpage.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <script type="text/javascript" src="js/fullpage.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
+    <script src="js/wow.min.js"></script>
+</head>
+<body>
+   <!--navbar-->
+    <header class="header" >
+      <div class="contenedor  colorPrimario" id="header_contenedor" style="transition: all 1s ease-in;" >
+         <a href="#" class="logo">Daniel Rondinel</a>      
+          <span class="icon-menu " id="btn-menu"></span>
+          <nav class="nav " id="nav">
+              <ul class="menu">
+                <li class="menu__item"><a class="menu__link select" href="">Home</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Perfi</a></li>
+                <li class="menu__item"><a class="menu__link" href="">Habilidades Tecnicas</a></li>
+                <li class="menu__item"><a class="menu__link " href="">Contáctame</a></li>   
+              </ul>
+          </nav>
+      </div> 
+   </header>
+    
+    
+    <div id="fullpage">
+    
+     <!--Home-->
+    <section class="section home" >
+        <div class="banner">
+            <div class="contenedor ">
+                <h2 class="banner__titulo ">Hola</h2>
+                <p class="banner__texto ">Soy Daniel Rondinel</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--Perfil-->
+    <section class="section perfil " >
+        <div class="contenedor">
+            <article class="columna left">
+                <img src="img/perfil.jpg" alt="" class="img_left">
+            </article>
+            <article class="columna right">
+                <h2 class="titulo">Daniel Rondinel</h2>
+                <p>Mi nombre es Daniel Rondinel y soy egresado de la carrera Sistemas de información.<br>
+                   Graduado de Isil 2019-I y en continuo aprendizaje. 
+                </p>
+                <p>
+                   Me caracterizo por ser una persona dinámica que se compromete totalmente con su trabajo, con facilidad para trabajar en equipo, persistencia para obtener los resultados deseados y con sentido de urgencia.
+                </p>
+            </article>            
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+     </div> 
+    <script src="js/menu.js" ></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+            
+        });
+        
+        new WOW().init();
+    </script>
+</body>
+</html>
