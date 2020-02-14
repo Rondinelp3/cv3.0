@@ -9,12 +9,11 @@
     margin: auto;
     width: 98%;
 }
-
 /*Estilos del header*/
 
 header{
     height: 60px;
-   
+   display: none;
 }
 header .contenedor{
     display: flex;
@@ -90,18 +89,24 @@ header .contenedor{
 /*--estilos de perfil*/
  
 .columna{
+    position: absolute;
     text-align: center;
-    margin: 10px 0px ;
-   
+  
+  
+       
 }
 .left img{
-    width: 50%;
+    width: 250px;
+}
+.left{
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%) 
-   
-    
+    transform: translateX(-50%)  translateY(-0%); 
+    background: red;
+    width: 100%;
+    height: 40%
+
 }
 .right{
     position: absolute;
@@ -109,8 +114,9 @@ header .contenedor{
     text-align: justify;
    
     justify-content: center;
-   
+    top: 60%;
     left: 50%;
-    transform: translateX(-50%) 
+    transform: translateX(-50%) translateY(-60%);
+    background: blue
 }
  
