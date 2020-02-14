@@ -89,34 +89,25 @@ header .contenedor{
 /*--estilos de perfil*/
  
 .columna{
-    position: absolute;
+    
     text-align: center;
-  
+    margin-bottom: 20px;
   
        
 }
 .left img{
     width: 250px;
+  
 }
 .left{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%)  translateY(-0%); 
-    background: red;
-    width: 100%;
-    height: 40%
-
+    background: red;   
+ 
 }
 .right{
-    position: absolute;
-    width: 90%;
+    width: 100%;
     text-align: justify;
-   
     justify-content: center;
-    top: 60%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-60%);
-    background: blue
+   
+    padding: 0 20px
 }
  
