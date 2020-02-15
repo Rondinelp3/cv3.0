@@ -35,7 +35,7 @@
     <div id="fullpage">
     
      <!--Home-->
-    <section class="section home" >
+    <section class="section home"data-anchor="firstPage fp-auto-width-responsive" >
         <div class="banner">
             <div class="contenedor ">
                 <h2 class="banner__titulo ">Hola</h2>
@@ -46,7 +46,7 @@
     
     
     <!--Perfil-->
-    <section class="section perfil " >
+    <section class="section perfil " data-anchor="secondPage" >
         <div class="contenedor_art ">
             <article class="columna left">
                 <img src="img/perfil.jpg" alt="" class="img_left">
@@ -65,7 +65,7 @@
     
     
      <!--habilidades-->
-    <section class="section habilidades " >
+    <section class="section habilidades " data-anchor="3rdPage">
        <h2 class="title_habi"> Habilidades </h2>
         <div class="caj_habilidades top">
             <img class="habi_img" src="img/activedirectory.jpg" alt="">
@@ -107,7 +107,7 @@
     
     </section> 
       <!--footer-->
-    <section class="section footer " >
+    <scetion class="section footer " data-anchor="4rdPage">
         <div class="contactame">
             <h2 class="titulofo">Contáctame</h2>
             <p>
@@ -122,13 +122,24 @@
                     
             </ul> 
         </div>
-    </section> 
+    </scetion> 
     
      </div> 
     <script src="js/menu.js" ></script>
     <script type="text/javascript">
+        
         var myFullpage = new fullpage('#fullpage',{
-             responsive: 768
+            anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage'],
+            responsiveWidth: 768,
+            afterResponsive: function(isResponsive){
+
+        }
+
+            
+
+
+        
+            
          } );
         
         new WOW().init();
