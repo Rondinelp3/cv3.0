@@ -113,7 +113,12 @@ header .contenedor{
 
 
  /*--estilos de habilidades*/
- 
+.title_habi{
+    height: 35px;
+    color: white;
+    text-align: center;
+    font-size: 35px
+}
 
 .caj_habilidades{
     position: relative;
@@ -129,7 +134,7 @@ header .contenedor{
     left: 0;
     color: #fff;
     background: rgba(0,0,0,0.5);
-    width: 30%;
+    width: 50%;
     height: 25%;
     padding: 5px;
   
