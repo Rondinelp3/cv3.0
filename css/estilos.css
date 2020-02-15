@@ -99,16 +99,14 @@ header .contenedor{
     width: 250px;
   
 }
-.left{
-      
- 
-}
 .right{
     width: 100%;
     text-align: justify;
     justify-content: center;
-   
     padding: 0 20px
+}
+.titulo{
+     text-align: center
 }
 
 
@@ -134,7 +132,7 @@ header .contenedor{
     left: 0;
     color: #fff;
     background: rgba(0,0,0,0.5);
-    width: 50%;
+    width: 40%;
     height: 25%;
     padding: 5px;
   
@@ -144,10 +142,7 @@ header .contenedor{
     margin: 1px 10px;
 }
  /*--estilos footer*/
-.footer{
-   background-image: url("img/sql.jpg");
-    background-position: center
-}
+ 
 
 .contactame{
     text-align: center;
@@ -162,4 +157,109 @@ header .contenedor{
     width: 50px;
     height: 50px;
     line-height: 45px;
+    
 }
+
+
+
+
+@media screen and (min-width:680px){
+ /*--estilos de perfil*/
+ 
+.columna{
+    
+    text-align: center;
+    margin-bottom: 20px;
+  
+       
+}
+.left img{
+    width: 450px;
+    height: auto
+  
+}
+.right{
+    width: 100%;
+    text-align: justify;
+    justify-content: center;
+    padding: 0 40px
+}
+/*--estilos footer*/
+    .contactame{
+        font-size: 19px
+    }    
+}
+
+@media screen and (min-width:1024px){
+    
+    /*--estilos de perfil*/
+.left{
+    width:50% ;
+    height:680px;
+
+    }  
+ .left img{
+    width:500px;
+    left: 50px;
+    display: flex; 
+   
+}
+ .right{
+    width: 50%;
+    position: relative;
+    left: 500px;
+    top:-450px;
+   
+    padding: 0px 50px
+   
+}
+.titulo{
+        margin: 50px 0px;
+   
+    }
+   
+ .contenedor_art{
+    height: 680px;
+    width: auto;
+  
+    }
+ /*--estilos de habilidades*/
+  .title_habi{
+    height: 40px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom:15px
+}  
+ .caj_habilidades{
+    display: inline-block;
+    width: 33.5%;
+    margin: -5px;
+    border: 1px solid;
+    border-bottom: 0;  
+}   
+ .caj_habilidades img{
+       height: 350px
+    
+}    
+   /*--estilos footer*/ 
+    .titulofo{
+        font-size: 70px
+    }
+
+}
+
+
+@media screen and (min-width:1280px){
+ /*--estilos de perfil*/
+.right{
+   left: 550px   
+}
+ /*--estilos de habilidades*/
+.caj_habilidades{
+    width: 33.7%;    
+}
+.caj_habilidades img{
+       height: 400px
+    
+} 
