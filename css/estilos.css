@@ -13,7 +13,7 @@
 
 header{
     height: 60px;
-   display: none;
+    display: none
 }
 header .contenedor{
     display: flex;
@@ -124,7 +124,7 @@ header .contenedor{
 }
 .caj_habilidades img {
     width: 100%;
-    height: 250px
+    height: 250px;;border: 1px solid;
 }
 .nom_habilidad{
     position: absolute;
@@ -187,7 +187,8 @@ header .contenedor{
 /*--estilos footer*/
     .contactame{
         font-size: 19px
-    }    
+    }
+    
 }
 
 @media screen and (min-width:1024px){
@@ -223,10 +224,11 @@ header .contenedor{
     width: auto;
   
     }
+  
  /*--estilos de habilidades*/
   .title_habi{
     height: 40px;
-    color: white;
+    color: black;
     text-align: center;
     font-size: 40px;
     margin-bottom:15px
@@ -235,8 +237,8 @@ header .contenedor{
     display: inline-block;
     width: 33.5%;
     margin: -5px;
-    border: 1px solid;
-    border-bottom: 0;  
+    
+      
 }   
  .caj_habilidades img{
        height: 350px

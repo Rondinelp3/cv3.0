@@ -14,11 +14,11 @@
     <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
     <script src="js/wow.min.js"></script>
 </head>
-<body>
+<body class="fp-responsive">
    <!--navbar-->
     <header class="header" >
       <div class="contenedor  colorPrimario" id="header_contenedor" style="transition: all 1s ease-in;" >
-        <!-- <a href="#" class="logo">Daniel Rondinel</a>  -->    
+         <a href="#" class="logo">Daniel Rondinel</a>   
           <span class="icon-menu " id="btn-menu"></span >
           <nav class="nav " id="nav">
               <ul class="menu">
@@ -47,7 +47,7 @@
     
     <!--Perfil-->
     <section class="section perfil " >
-        <div class="contenedor_art">
+        <div class="contenedor_art ">
             <article class="columna left">
                 <img src="img/perfil.jpg" alt="" class="img_left">
             </article>
@@ -127,10 +127,9 @@
      </div> 
     <script src="js/menu.js" ></script>
     <script type="text/javascript">
-        var myFullpage = new fullpage('#fullpage', {
-        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', '#14B76E','#ccddff'],
-            
-        });
+        var myFullpage = new fullpage('#fullpage',{
+autoScrolling: !isPhoneDevice()
+        } );
         
         new WOW().init();
     </script>
