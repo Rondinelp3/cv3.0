@@ -8,3 +8,6 @@ btnMenu.addEventListener('click', ()=>{
 
 
  
+  $("img.lazy").lazyload({
+				    effect : "fadeIn"
+				}); 

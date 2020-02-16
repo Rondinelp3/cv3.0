@@ -3,12 +3,40 @@
     margin: 0;
     list-style: none;
     padding: 0;
-    text-decoration: none
-}
+    text-decoration: none;
+ }
+ 
 .contenedor{
     margin: auto;
     width: 98%;
 }
+
+    .sec-left {
+      -webkit-animation-name: fadeInLeft;
+      animation-name: fadeInLeft;
+      animation-delay: 0.5s
+    }
+    .sec-right {
+      -webkit-animation-name: fadeInRight;
+      animation-name: fadeInRight;
+      animation-delay: 0.9s
+    }
+
+  .ctn-habl .top:hover {
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1);
+          -webkit-transition: 1.3s;
+          -o-transition: 1.3s;
+          transition: 1.3s;
+          cursor: pointer; }
+
+
+
+
+
+
+
 /*Estilos del header*/
 
 header{
@@ -73,6 +101,12 @@ header .contenedor{
 .mostrar{
     left:0;
     transition: 0.5s;
+}
+
+
+.home{
+     background-image: url(../img/home.jpg);
+     background-position: top center;
 }
 /*Estilos del banner*/
 
@@ -146,11 +180,17 @@ header .contenedor{
 
 .contactame{
     text-align: center;
+    color: white;
     
+    
+}
+.contactame a{
+    color: white 
+
 }
 .footer [class^="icon-"]{
     display: inline-block;
-    color: black;
+   
     font-size: 26px;
     border: 1px solid;
     border-radius: 100%;
@@ -158,6 +198,10 @@ header .contenedor{
     height: 50px;
     line-height: 45px;
     
+}
+.footer{
+     background-image: url(../img/footer.jpg);
+     background-position: top center; }
 }
 
 

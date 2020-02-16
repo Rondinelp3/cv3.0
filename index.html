@@ -12,7 +12,7 @@
     <script type="text/javascript" src="js/fullpage.min.js"></script>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.lazy.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    
 </head>
 <body class="fp-responsive">
    <!--navbar-->
@@ -35,11 +35,11 @@
     <div id="fullpage">
     
      <!--Home-->
-    <section class="section home"data-anchor="firstPage fp-auto-width-responsive" >
+    <section class="section fp-auto-width-responsive home " data-anchor=" firstPage" >
         <div class="banner">
             <div class="contenedor ">
-                <h2 class="banner__titulo ">Hola</h2>
-                <p class="banner__texto ">Soy Daniel Rondinel</p>
+                <h2 class="banner__titulo animated fadeIn slow banner_2 ">Hola</h2>
+                <p class="banner__texto animated fadeIn slow banner_2">Soy Daniel Rondinel</p>
             </div>
         </div>
     </section>
@@ -48,10 +48,10 @@
     <!--Perfil-->
     <section class="section perfil " data-anchor="secondPage" >
         <div class="contenedor_art ">
-            <article class="columna left">
-                <img src="img/perfil.jpg" alt="" class="img_left">
+            <article class="  columna left animated sec-left">
+                <img src="" data-src="img/perfil.jpg" alt="" class="img_left lazy">
             </article>
-            <article class="columna right">
+            <article class=" lazy columna right animated sec-right">
                 <h2 class="titulo">Daniel Rondinel</h2>
                 <p>Mi nombre es Daniel Rondinel y soy egresado de la carrera Sistemas de información.<br>
                    Graduado de Isil 2019-I y en continuo aprendizaje. 
@@ -65,40 +65,40 @@
     
     
      <!--habilidades-->
-    <section class="section habilidades " data-anchor="3rdPage">
-       <h2 class="title_habi"> Habilidades </h2>
-        <div class="caj_habilidades top">
-            <img class="habi_img" src="img/activedirectory.jpg" alt="">
+    <section class="section habilidades ctn-habl" data-anchor="3rdPage">
+       <h2 class="title_habi animated"> Habilidades </h2>
+        <div class="animated caj_habilidades top">
+            <img class="lazy habi_img" data-src="img/activedirectory.jpg" alt="">
             <div class="nom_habilidad">
                 <h3 class="habi_titulo" >Active directory</h3>
             </div>
         </div>
-        <div class="caj_habilidades top">
-            <img class="habi_img" src="img/backup.jpg" alt="">
+        <div class="animated caj_habilidades top">
+            <img class="lazy habi_img" data-src="img/backup.jpg" alt="">
             <div class="nom_habilidad">
                 <h3 class="habi_titulo" >Backup</h3>
             </div>
         </div>
-        <div class="caj_habilidades top">
-            <img class="habi_img" src="img/cobit.jpg" alt="">
+        <div class="animated caj_habilidades top">
+            <img class="lazy habi_img" data-src="img/cobit.jpg" alt="">
             <div class="nom_habilidad">
                 <h3 class="habi_titulo" >Cobit</h3>
             </div>
         </div>
-        <div class="caj_habilidades bot">
-            <img class="habi_img" src="img/html.png" alt="">
+        <div class="animated caj_habilidades top">
+            <img class="lazy habi_img" data-src="img/html.png" alt="">
             <div class="nom_habilidad">
                 <h3 class="habi_titulo" >Html,Css,Js</h3>
             </div>
         </div>
-        <div class="caj_habilidades bot">
-            <img class="habi_img" src="img/itil.jpg" alt="">
+        <div class="animated caj_habilidades top">
+            <img class="lazy habi_img" data-src="img/itil.jpg" alt="">
             <div class="nom_habilidad">
                 <h3 class="habi_titulo" >Itil</h3>
             </div>
         </div>
-        <div class="caj_habilidades bot">
-            <img class="habi_img" src="img/sql.jpg" alt="">
+        <div class="animated caj_habilidades top">
+            <img class="lazy habi_img" data-src="img/sql.jpg" alt="">
             <div class="nom_habilidad">
                 <h3  class="habi_titulo"> Sql Server</h3>
             </div>
@@ -107,7 +107,7 @@
     
     </section> 
       <!--footer-->
-    <scetion class="section footer " data-anchor="4rdPage">
+    <section class="section footer " data-anchor="4rdPage">
         <div class="contactame">
             <h2 class="titulofo">Contáctame</h2>
             <p>
@@ -115,34 +115,30 @@
                 <a href="mailto:daniel_rondinelp3@hotmail.com">daniel_rondinelp3@hotmail.com</a>
             </p>
             <ul class="social">
-                <li><a   class="icon-linkedin"  href="https://linkedin.com/in/danielrondinel"></a>
+                <li><a  class="icon-linkedin"  href="https://linkedin.com/in/danielrondinel"  target="_blank"></a>
                 </li>
-                <li><a class="icon-github"  href="https://github.com/Rondinelp3"></a>
+                <li><a class="icon-github"  href="https://github.com/Rondinelp3"  target="_blank"></a>
                 </li>       
                     
             </ul> 
         </div>
-    </scetion> 
+    </section> 
     
      </div> 
     <script src="js/menu.js" ></script>
+    <script src="js/wow.min.js"></script>
     <script type="text/javascript">
         
         var myFullpage = new fullpage('#fullpage',{
             anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage'],
             responsiveWidth: 768,
-            afterResponsive: function(isResponsive){
-
-        }
-
             
-
-
+        } );
         
-            
-         } );
-        
-        new WOW().init();
+     
+    </script>
+    <script>
+              new WOW().init();
     </script>
 </body>
 </html>
