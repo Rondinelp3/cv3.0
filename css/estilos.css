@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 *{
     box-sizing:border-box;
     margin: 0;
     list-style: none;
     padding: 0;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
  }
  
 .contenedor{
@@ -41,7 +43,8 @@
 
 header{
     height: 60px;
-    display: none
+   
+    
 }
 header .contenedor{
     display: flex;
@@ -49,7 +52,7 @@ header .contenedor{
     position:fixed ;
     width: 100%;
     height: 60px;
-    z-index: 100;  
+    z-index: 100; background-color: hsla( 0.50turn , 100% , 50% , 0.5 );
 }
 .colorPrimario{
      background: rgba(rgba 138,221,45,0);
@@ -66,11 +69,13 @@ header .contenedor{
     border-radius: 5px;
     margin-left: auto;
     cursor: pointer;
-    border: 1px solid
+    border: 1px solid;
+   position: relative;
+    left:-1%
 }
 .logo{
     position: relative;
-    width: 120px;
+    width: 140px;
     height: 60px;
     text-align: center;
     line-height: 45px
@@ -103,7 +108,7 @@ header .contenedor{
     transition: 0.5s;
 }
 
-
+ 
 .home{
      background-image: url(../img/home.jpg);
      background-position: top center;
@@ -116,7 +121,7 @@ header .contenedor{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     width: 100%;
-    color: black;
+    color: white;
     text-align: center;   
 }
 
@@ -140,7 +145,8 @@ header .contenedor{
     padding: 0 20px
 }
 .titulo{
-     text-align: center
+     text-align: center;
+    padding-bottom: 15px
 }
 
 
@@ -214,8 +220,12 @@ header .contenedor{
 }
 
 @media screen and (min-width:680px){
- /*--estilos de perfil*/
- 
+  .banner .contenedor{
+    font-size: 18px
+} 
+    
+/*--estilos de perfil*/
+  
 .columna{
     
     text-align: center;
@@ -242,8 +252,12 @@ header .contenedor{
 }
 
 @media screen and (min-width:1024px){
+ .banner .contenedor{
+    font-size: 20px
+}      
     
     /*--estilos de perfil*/
+    
 .left{
     width:50% ;
     height:680px;
@@ -304,6 +318,9 @@ header .contenedor{
 
 @media screen and (min-width:1280px){
  /*--estilos de perfil*/
+.banner .contenedor{
+    font-size: 25px
+}   
 .right{
    left: 550px   
 }
