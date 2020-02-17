@@ -13,25 +13,26 @@
     width: 98%;
 }
 
-    .sec-left {
+.sec-left {
       -webkit-animation-name: fadeInLeft;
       animation-name: fadeInLeft;
       animation-delay: 0.5s
     }
-    .sec-right {
+.sec-right {
       -webkit-animation-name: fadeInRight;
       animation-name: fadeInRight;
       animation-delay: 0.9s
     }
 
-  .ctn-habl .top:hover {
+.ctn-habl .top:hover {
           -webkit-transform: scale(1.1);
           -ms-transform: scale(1.1);
           transform: scale(1.1);
           -webkit-transition: 1.3s;
           -o-transition: 1.3s;
           transition: 1.3s;
-          cursor: pointer; }
+          cursor: pointer;
+}
 
 
 
@@ -43,7 +44,7 @@
 
 header{
     height: 60px;
-   
+   position: absolute
     
 }
 header .contenedor{
@@ -267,28 +268,24 @@ header .contenedor{
     font-size: 20px
 }      
     
-    /*--estilos de perfil*/
-    
+ /*--estilos de perfil*/
+ .perfil{
+        display: flex;
+        justify-content: center
+    }  
 .left{
     width:50% ;
     height:680px;
-
-    }  
+}  
  .left img{
     width:500px;
     left: 50px;
     display: flex; 
    
 }
- .right{
-    width: 50%;
-    position: relative;
-    left: 500px;
-    top:-450px;
-   
-    padding: 0px 50px
-   
-}
+.right{
+        max-width: 800px
+    }
 .titulo{
         margin: 50px 0px;
    
@@ -297,7 +294,8 @@ header .contenedor{
  .contenedor_art{
     height: 680px;
     width: auto;
-  
+    display: flex;
+   
     }
   
  /*--estilos de habilidades*/
