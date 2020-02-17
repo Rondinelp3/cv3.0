@@ -112,6 +112,7 @@ header .contenedor{
 .home{
      background-image: url(../img/home.jpg);
      background-position: top center;
+    background-size: cover
 }
 /*Estilos del banner*/
 
@@ -207,7 +208,8 @@ header .contenedor{
 }
 .footer{
      background-image: url(../img/footer.jpg);
-     background-position: top center; }
+     background-position: top center;
+      background-size: cover   }
 }
 
 
